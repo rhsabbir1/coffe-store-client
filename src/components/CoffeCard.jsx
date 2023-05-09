@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const CoffeCard = ({ coffe }) => {
@@ -49,7 +50,7 @@ const CoffeCard = ({ coffe }) => {
                 <div className="card-actions justify-end">
                     <div className="btn-group btn-group-vertical space-y-1">
                         <button className="btn">View</button>
-                        <button className="btn">Edit</button>
+                        <button className="btn"><Link to={`updatecoffe/${_id}`}>Edit</Link></button>  
                         <button onClick={() => handleDelete(_id)} className="btn">X</button>
                     </div>
                 </div>
@@ -59,3 +60,5 @@ const CoffeCard = ({ coffe }) => {
 };
 
 export default CoffeCard;
+
+

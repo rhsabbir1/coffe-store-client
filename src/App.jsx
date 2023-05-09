@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className='m-20'>
       <h1 className='text-3xl text-center text-purple-800'>Coffe : {coffes.length}</h1>
-      <div className='grid md:grid-cols-2 gap-4'>
+      <div className='grid md:grid-cols-2 gap-4 my-10'>
         {
           coffes.map(coffe => <CoffeCard
             key={coffe._id}
